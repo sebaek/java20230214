@@ -20,3 +20,9 @@ public class CastingExample {
 		System.out.println(var8);
 	}
 }
+
+
+
+
+
+
