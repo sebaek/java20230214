@@ -30,8 +30,39 @@ public class C14String {
 		String str5 = "true";
 		boolean b5 = Boolean.parseBoolean(str5);
 		System.out.println(b5);
+		
+		
+		// 기본타입 -> 문자열(String) 
+		// valueOf 메소드 사용
+		int i6 = 700;
+		String str6 = String.valueOf(i6);
+		
+		long l7 = 9999999999L;
+		String str7 = String.valueOf(l7);
+		
+		double d8 = 3.14;
+		String str8 = String.valueOf(d8);
+		
+		boolean b9 = true;
+		String str9 = String.valueOf(b9);
+		
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
