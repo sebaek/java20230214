@@ -13,15 +13,16 @@ public class C08Print {
 				9 8
 				5 2
 				""";
-		
+
 		Scanner scanner = new Scanner(input);
 		int loop = scanner.nextInt();
-		
+
 		for (int i = 1; i <= loop; i++) {
 			int a = scanner.nextInt();
 			int b = scanner.nextInt();
-			
-			System.out.printf("Case #%2$d: %1$d%n", 1, 1);
+
+//			System.out.printf("Case #%2$d: %1$d%n", (a + b), i);
+			System.out.println("Case #" + i + ":" + (a + b));
 		}
 	}
 }
