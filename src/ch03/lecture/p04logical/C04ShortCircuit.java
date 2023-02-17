@@ -1,38 +1,37 @@
 package ch03.lecture.p04logical;
 
-public class C03ShortCircuit {
+public class C04ShortCircuit {
 	public static void main(String[] args) {
-		// &&
-		// true && true : true
-		// true && false : false
-		// false && true : false
-		// false && false : false
+		// ||
+		// true || true : true
+		// true || false : true
+		// false || true : true
+		// false || false : false
 		
 		int x = 10;
-		if ((x++ > 0) && (x++ < 100)) {
+		
+		if ((x++ > 100) || (x++ < 0)) {
 			System.out.println("실행됨1");
 		}
 		System.out.println(x);
 		
 		x = 10;
-		if ((x++ > 0) && (x++ < 5)) {
+		if ((x++ > 100) || (x++ > 0)) {
 			System.out.println("실행됨2");
 		}
 		System.out.println(x);
 		
 		x = 10;
-		if ((x++ > 100) && (x++ < 200)) {
+		if ((x++ > 0) || (x++ < 100)) {
 			System.out.println("실행됨3");
 		}
 		System.out.println(x);
 		
 		x = 10;
-		if ((x++ > 100) && (x++ < 0)) {
+		if ((x++ > 0) || (x++ < -100)) {
 			System.out.println("실행됨4");
 		}
 		System.out.println(x);
-		
-		
 	}
 }
 
