@@ -15,5 +15,6 @@ public class SwitchNoBreakCaseExample {
 		default:
 			System.out.println("외근을 나갑니다.");
 		}
+		
 	}
 }
