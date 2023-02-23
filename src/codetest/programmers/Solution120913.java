@@ -4,7 +4,7 @@ public class Solution120913 {
 	public String[] solution(String my_str, int n) {
 		int len = my_str.length();
 
-		int answerLength = (len - 1) / n + 1;
+		int answerLength = ((len - 1) / n) + 1;
 
 		String[] answer = new String[answerLength];
 
