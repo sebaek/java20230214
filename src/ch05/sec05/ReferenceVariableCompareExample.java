@@ -1,6 +1,7 @@
-package ch05.exercise;
+package ch05.sec05;
 
 public class ReferenceVariableCompareExample {
+	// 그림03
 	public static void main(String[] args) {
 		int[] arr1;
 		int[] arr2;
