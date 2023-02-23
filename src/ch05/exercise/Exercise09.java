@@ -7,22 +7,21 @@ public class Exercise09 {
 		boolean run = true;
 		Scanner scanner = new Scanner(System.in);
 		int[] scores = null;
-		
+
 		while (run) {
 			System.out.println("----------------------------------------------");
 			System.out.println("1.학생수|2.점수입력|3.점수리스트|4.분석|5.종료");
 			System.out.println("----------------------------------------------");
 			System.out.print("선택>");
-			
+
 			int menu = scanner.nextInt();
-			
-			
+
 			switch (menu) {
 			case 1 -> {
 				// 학생수 입력
 				System.out.print("학생수>");
 				int students = scanner.nextInt();
-				
+
 				scores = new int[students];
 			}
 			case 2 -> {
@@ -50,7 +49,7 @@ public class Exercise09 {
 				}
 				System.out.println("최고 점수: " + max);
 				System.out.println("평균 점수: " + (sum / scores.length));
-				
+
 			}
 			case 5 -> {
 				// 종료
@@ -58,7 +57,7 @@ public class Exercise09 {
 			}
 			}
 		}
-		
+
 		System.out.println("프로그램 종료");
 	}
 }
