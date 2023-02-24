@@ -8,10 +8,10 @@ public class Solutioin120839 {
 
 		for (char a : array) {
 			char w = switch (a) {
-			case '0' -> '5';
-			case '2' -> '0';
-			case '5' -> '2';
-			default -> ' ';
+				case '0' -> '5';
+				case '2' -> '0';
+				case '5' -> '2';
+				default -> ' ';
 			};
 			answer += w;
 		}
