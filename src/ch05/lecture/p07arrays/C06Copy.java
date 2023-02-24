@@ -10,6 +10,7 @@ public class C06Copy {
 				{9, 8}
 		};
 		
+		// 얕은 복사 (shallow copy)
 		int[][] arr2 = Arrays.copyOf(arr1, arr1.length);
 		
 		System.out.println(arr1.length);

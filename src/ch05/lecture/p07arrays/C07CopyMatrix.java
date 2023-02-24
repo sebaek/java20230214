@@ -8,9 +8,9 @@ public class C07CopyMatrix {
 				{5, 7, 9, 10},
 				{3, 2, 1, 0}
 		};
-		
+
+		// 깊은 복사 (deep copy)
 		int[][] arr2 = new int[arr1.length][];
-		
 		for (int i = 0; i < arr1.length; i++) {
 			arr2[i] = Arrays.copyOf(arr1[i], arr1[i].length);
 		}
