@@ -23,6 +23,9 @@ public class C04Parameter {
 		String s2 = null;
 		
 		o1.method3(s2);
+		
+		// method4, method5, method6, method7 호출 코드 작성
+		
 	}
 }
 
