@@ -20,6 +20,12 @@ public class C06Parameter {
 		o1.method3(3.14);
 		o1.method3(2938749298374982734L);
 		o1.method3(55);
+		
+		o1.method4(3.14f);  // 되고
+		o1.method4(298342L); // 되고
+		o1.method4(99); // 되고
+		o1.method4(3.14); // 안되고
+		
 	}
 }
 
