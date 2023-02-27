@@ -21,6 +21,17 @@ public class MyClass05 {
 		}
 		
 	}
+	
+	void method4(int param) {
+		int var;
+		var = 3;
+		
+		int p = param;
+		p = 3;
+		
+		System.out.println(param * var);
+		
+	}
 }
 
 

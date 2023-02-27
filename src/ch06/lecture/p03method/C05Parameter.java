@@ -9,5 +9,8 @@ public class C05Parameter {
 		o1.method3(5);
 		o1.method3(10);
 		
+		o1.method4(9);
+		o1.method4(8);
+		
 	}
 }
