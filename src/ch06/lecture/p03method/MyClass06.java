@@ -12,6 +12,10 @@ public class MyClass06 {
 	void method3(double param) {
 		System.out.println("double 파라미터 하나 받는 메소드");
 	}
+	
+	void method4(float param) {
+		System.out.println("float 파라미터 하나 받는 메소드");
+	}
 }
 
 

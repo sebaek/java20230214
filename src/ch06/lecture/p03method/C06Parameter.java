@@ -24,7 +24,7 @@ public class C06Parameter {
 		o1.method4(3.14f);  // 되고
 		o1.method4(298342L); // 되고
 		o1.method4(99); // 되고
-		o1.method4(3.14); // 안되고
+//		o1.method4(3.14); // 안되고
 		
 	}
 }
