@@ -6,6 +6,8 @@ public class C05Parameter {
 		
 		o1.method2(10, 20);
 		o1.method2(30, 50);
+		o1.method3(5);
+		o1.method3(10);
 		
 	}
 }

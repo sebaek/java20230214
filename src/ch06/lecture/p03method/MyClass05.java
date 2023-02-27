@@ -10,6 +10,17 @@ public class MyClass05 {
 	void method2(int x, int y) {
 		System.out.println(x + " + " + y + " = " + (x + y));
 	}
+	
+	void method3(int line) {
+		
+		for (int i = 0; i < line; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
 }
 
 
