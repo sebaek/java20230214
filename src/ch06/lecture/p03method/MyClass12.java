@@ -19,6 +19,37 @@ public class MyClass12 {
 		
 		return 5;
 	}
+	
+	// 자동형변환
+	int method3() {
+		int a = 3;
+		
+		return a;
+	}
+	
+	int method4() {
+		long a = 3L;
+		
+		return a;
+	}
+	
+	int method5() {
+		short a = 6000;
+		
+		return a; // 자동 형변환
+	}
+	
+	double method6() {
+		double d = 3.14;
+		
+		return d;
+	}
+	
+	double method7() {
+		long l = 33;
+		
+		return l;// 자동 형변환
+	}
 }
 
 
