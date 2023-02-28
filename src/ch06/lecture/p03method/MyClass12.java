@@ -30,7 +30,7 @@ public class MyClass12 {
 	int method4() {
 		long a = 3L;
 		
-		return a;
+		return a; // 안됨
 	}
 	
 	int method5() {
@@ -49,6 +49,12 @@ public class MyClass12 {
 		long l = 33;
 		
 		return l;// 자동 형변환
+	}
+	
+	// 리턴이 없으면 void로 리턴타입 명시
+	void method8() {
+		
+		return; // 만약 쓴다면 메소드 종료 역할로만 사용 가능
 	}
 }
 
