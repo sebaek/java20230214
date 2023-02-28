@@ -1,4 +1,4 @@
-package codetest.codingbat;
+package codetest.programmers;
 
 public class Solution120892 {
     public String solution(String cipher, int code) {
