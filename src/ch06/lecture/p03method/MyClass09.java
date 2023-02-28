@@ -27,6 +27,11 @@ public class MyClass09 {
 			System.out.println("가변길이 파라미터 : " + arg);
 		}
 	}
+	
+	// 가변길이매개변수는 파라미터 목록에서 가장 오른쪽에 작성해야함
+	void method4(String param, double d, int... values) {
+		
+	}
 }
 
 
