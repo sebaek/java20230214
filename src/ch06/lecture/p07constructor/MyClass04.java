@@ -4,9 +4,9 @@ public class MyClass04 {
 	String model;
 	int price;
 	
-	MyClass04(String modelParam, int priceParam) {
-		model = modelParam;
-		price = priceParam;
+	MyClass04(String model, int price) {
+		this.model = model;
+		this.price = price;
 	}
 
 	void desc() {
