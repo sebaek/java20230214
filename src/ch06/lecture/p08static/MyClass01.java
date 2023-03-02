@@ -15,7 +15,8 @@ public class MyClass01 {
 		name = "son";
 	}
 	
-	// static block : 스태틱 필드 초기화(주로)
+	// static initialization block : 스태틱 필드 초기화(주로)
+	// 정적초기화블럭
 	static {
 		// 명령문들
 		company = "samsung";
