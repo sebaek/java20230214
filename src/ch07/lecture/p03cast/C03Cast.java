@@ -12,8 +12,11 @@ public class C03Cast {
 	public static void method1(Animal a) {
 		a.breath();
 		
-		Horse h = (Horse) a;
-		h.run();
+		// 만약 말 객체이면 실행
+		if (a instanceof Horse){
+			Horse h = (Horse) a;
+			h.run();
+		}
 	}
 }
 
