@@ -16,8 +16,6 @@ public class AbstractMethodExample {
 	public static void animalSound(Animal animal) {
 		animal.breathe();
 		animal.sound();
-		// TODO Auto-generated method stub
-
 	}
 
 }
