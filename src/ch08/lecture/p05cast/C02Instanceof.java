@@ -9,12 +9,24 @@ public class C02Instanceof {
 			MyClass021 o3 = (MyClass021) o1; // ok
 		}
 		
+		if (o1 instanceof MyClass021 o3) {
+			//
+		}
+		
 		if (o2 instanceof MyClass022) {
 			MyClass022 o4 = (MyClass022) o2; // ok
 		}
 		
+		if (o2 instanceof MyClass022 o4) {
+			
+		}
+		
 		if (o1 instanceof MyClass022) {
 			MyClass022 o5 = (MyClass022) o1; // x
+		}
+		
+		if (o1 instanceof MyClass022 o5) {
+			
 		}
 		
 		System.out.println("실행 흐름 이어감");
