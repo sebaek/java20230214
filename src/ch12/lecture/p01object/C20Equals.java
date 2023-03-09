@@ -14,6 +14,7 @@ public class C20Equals {
 		
 		System.out.println(o1.equals(o4)); // true
 		System.out.println(o1.equals(o3)); // true
+		System.out.println(o1.equals(o2)); // false
 	}
 }
 
