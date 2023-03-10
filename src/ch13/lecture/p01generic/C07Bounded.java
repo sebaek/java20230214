@@ -22,6 +22,9 @@ class MyClass07<T> {
 	private T item;
 	
 	public void printItem() {
+		// Object의 메소드 안전하게 실행 가능
+		// 왜냐하면 Object는 모든 클래스의 상위 클래스이니까
+		
 		String str = item.toString();
 		int hashCode = item.hashCode();
 		boolean equals = item.equals(null);
