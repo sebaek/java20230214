@@ -12,7 +12,7 @@ public class C02MethodReference {
 //		MyInterface03 o6 = MyClass02::method1; // x
 		
 		MyInterface03 o7 = (a, b) -> MyClass02.method2(b, a);
-		MyInterface03 o8 = MyClass02::method2;
+		MyInterface03 o8 = MyClass02::method2; // x
 		
 	}
 }
