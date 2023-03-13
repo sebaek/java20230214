@@ -36,6 +36,8 @@ public class C03Lambda {
 		o5.method(40);
 		
 		
+		MyInterface03 o6 = x -> System.out.println("받은 값:" + x);
+		o6.method(50);
 	}
 }
 
