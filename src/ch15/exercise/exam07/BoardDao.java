@@ -5,6 +5,7 @@ import java.util.*;
 public class BoardDao {
 
 	public ArrayList<Board> getBoardList() {
+//		ArrayList<Board> list = new ArrayList<>();
 		var list = new ArrayList<Board>();
 		
 		list.add(new Board("제목1", "내용1"));
