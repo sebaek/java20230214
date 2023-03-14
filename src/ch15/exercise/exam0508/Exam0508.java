@@ -23,6 +23,7 @@ public class Exam0508 {
 		// 합, 평균 구하기
 		int sum = 0;
 		int cnt = 0;
+		for (List<Integer> l : list) {
 			for (Integer s : l) {
 				sum += s;
 				cnt++;
