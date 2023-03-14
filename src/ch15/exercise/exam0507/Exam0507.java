@@ -10,7 +10,13 @@ public class Exam0507 {
 		List<Integer> list = List.of(1, 5, 3, 8, 2);
 		
 		// 위 리스트에서 최대값 구하는 코드 작성
+		int max = Integer.MIN_VALUE;
 		
+		for (Integer e : list) {
+			max = Math.max(max, e);
+		}
+		
+		System.out.println(max);
 		
 	}
 }
