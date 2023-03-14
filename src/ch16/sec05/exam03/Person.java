@@ -1,4 +1,4 @@
-package ch116.sec05.exam03;
+package ch16.sec05.exam03;
 
 public class Person {
 	public Member getMember1(Creatable1 creatable) {
