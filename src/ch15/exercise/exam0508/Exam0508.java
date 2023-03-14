@@ -14,17 +14,24 @@ public class Exam0508 {
 				List.of(95, 86),
 				List.of(83, 92, 96),
 				List.of(78, 83, 93, 87, 88));
-		
-		//문제6
-		System.out.println(list.size()); //?
-		System.out.println(list.get(2).size()); //?
-		
+
+		// 문제6
+		System.out.println(list.size()); // ?
+		System.out.println(list.get(2).size()); // ?
+
 		// 문제 8
 		// 합, 평균 구하기
+		int sum = 0;
+		int cnt = 0;
+			for (Integer s : l) {
+				sum += s;
+				cnt++;
+			}
+		}
+
+		double avg = (double) sum / cnt;
+		System.out.println("합: " + sum);
+		System.out.println("평균: " + avg);
 		
 	}
 }
-
-
-
-
