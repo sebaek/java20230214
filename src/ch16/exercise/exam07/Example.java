@@ -14,7 +14,7 @@ public class Example {
 	}
 	
 	public static void main(String[] args) {
-		// 스태틱 메소드 참조
+		// 스태틱 메소드 참조로 변경해보세요
 		int max1 = maxOrMin((x, y) -> Math.max(x, y));
 		System.out.println("최대값: " + max1);
 		
@@ -30,7 +30,7 @@ public class Example {
 		});
 		System.out.println("최대값: " + max3);
 		
-		// 스태틱 메소드 참조
+		// 스태틱 메소드 참조로 변경해보세요
 		int min1 = maxOrMin((x, y) -> Math.min(x, y));
 		System.out.println("최소값: " + min1);
 		
