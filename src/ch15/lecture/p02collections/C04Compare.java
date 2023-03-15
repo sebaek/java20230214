@@ -14,7 +14,8 @@ public class C04Compare {
 		// 나이순 정렬(나이가 어릴수록 작은 index에)
 //		Collections.sort(list);
 //		Collections.sort(list, (a, b) -> 0);
-		
+		Collections.sort(list, (a, b) -> b.getBirth().compareTo(a.getBirth()));
+		System.out.println(list);
 	}
 }
 
