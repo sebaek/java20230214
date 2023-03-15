@@ -14,7 +14,7 @@ public class C02Compare {
 		// 다음 세개중 하나의 값 리턴
 		// 음수: 첫번째 매개값이 작으면
 		// 0 : 두값이 같으면
-		// 양수 : 첫번재 매개값이 크면
+		// 양수 : 첫번째 매개값이 크면
 		Person02 maxAge = Collections.max(list2, (a, b) -> a.getAge() - b.getAge());
 		System.out.println(maxAge);
 
@@ -22,7 +22,13 @@ public class C02Compare {
 		System.out.println(minAge);
 		
 		System.out.println(list2);
+		
+		//나이순 정렬
 		Collections.sort(list2, (x, y) -> x.getAge() - y.getAge());
+		System.out.println(list2);
+		
+		// 이름순 정렬
+		Collections.sort(list2, (x, y) -> x.getName().compareTo(y.getName()));
 		System.out.println(list2);
 
 	}
