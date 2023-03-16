@@ -1,4 +1,4 @@
-package ch15.lecture.p06queue;
+package ch15.lecture.p06stack;
 
 import java.util.*;
 
