@@ -23,5 +23,17 @@ class Solution844Test {
 		Solution844 o1 = new Solution844();
 		assertFalse(o1.backspaceCompare("a#c", "b"));
 	}
+	
+	@Test
+	void test4() {
+		Solution844 o1 = new Solution844();
+		assertTrue(o1.backspaceCompare("a##c", "#a#c"));
+	}
 
 }
+
+
+
+
+
+
