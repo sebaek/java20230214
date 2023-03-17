@@ -6,23 +6,27 @@ import java.util.stream.*;
 public class C17Collect {
 	public static void main(String[] args) {
 		List<Car> list = List.of(
-				new Car("avante", "middle"),
-				new Car("genesis", "heavy"),
-				new Car("casper", "light"),
-				new Car("morning", "light"),
-				new Car("sonata", "heavy"),
-				new Car("k5", "middle")
-				);
-		
+				new Car("avante", "middle", 2000),
+				new Car("genesis", "heavy", 4000),
+				new Car("casper", "light", 1500),
+				new Car("morning", "light", 1000),
+				new Car("sonata", "heavy", 2500),
+				new Car("k5", "middle", 2500));
+
 		Map<String, List<Car>> r1 = list.stream()
 				.collect(Collectors.groupingBy(Car::getType));
-		
+
 		for (var entry : r1.entrySet()) {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
-		
-		
-		
+
+		Map<String, Integer> r2 = list.stream()
+				.collect(Collectors.groupingBy(Car::getType,
+						Collectors.summingInt(Car::getPrice)));
+
+		r2.entrySet()
+				.stream()
+				.forEach(e -> System.out.println(e.getKey() + ":" + e.getValue()));
 	}
 }
 
@@ -30,10 +34,20 @@ public class C17Collect {
 class Car {
 	private String name;
 	private String type;
+	private int price;
 
-	public Car(String name, String type) {
+	public Car(String name, String type, int price) {
 		this.name = name;
 		this.type = type;
+		this.price = price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getPrice() {
+		return price;
 	}
 
 	public String getName() {
