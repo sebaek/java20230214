@@ -11,5 +11,28 @@ public class C16Collect {
 				.collect(Collectors.groupingBy(e -> e, Collectors.counting()));
 
 		System.out.println(r1);
+		
+		
+		Map<Integer, Integer> r2 = new HashMap<>();
+		
+		for (Integer n : list) {
+			
+			Integer oldValue = r2.get(n);
+			
+			if (oldValue == null) {
+				r2.put(n, 1);
+			} else {
+				r2.put(n, oldValue + 1);
+			}
+		}
+		
+		System.out.println(r2);
 	}
 }
+
+
+
+
+
+
+
