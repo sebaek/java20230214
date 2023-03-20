@@ -1,4 +1,4 @@
-package ch17.exercise.exam06;
+package ch17.lecture.p03intermediate;
 
 import java.util.stream.*;
 
