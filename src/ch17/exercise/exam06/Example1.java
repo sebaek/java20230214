@@ -20,10 +20,12 @@ public class Example1 {
 		
 		System.out.println(avg);
 		
+		System.out.println("stream, collect 사용 #####");
 		Double avg2 = list.stream()
 			.collect(Collectors.averagingDouble(Member::getAge));
 		System.out.println(avg2);
 			
+		System.out.println("IntStream, average 사용 ####");
 		double avg3 = list.stream()
 			.mapToInt(Member::getAge)
 			.average()
