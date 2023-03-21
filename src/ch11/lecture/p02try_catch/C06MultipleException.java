@@ -1,6 +1,6 @@
 package ch11.lecture.p02try_catch;
 
-public class C06MutipleException {
+public class C06MultipleException {
 	public static void main(String[] args) {
 		try {
 			int[] a = {0, 1};
