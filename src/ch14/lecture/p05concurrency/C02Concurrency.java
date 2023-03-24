@@ -8,6 +8,7 @@ public class C02Concurrency {
 	
 	public static void main(String[] args) {
 		Object o = new Object();
+//		Object o1 = new Object();
 		Thread a = new Thread(() -> {
 			for (int i = 0; i < 100000; i++) {
 				synchronized (o) {
