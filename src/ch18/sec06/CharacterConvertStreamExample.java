@@ -1,4 +1,4 @@
-package cha18.sec06;
+package ch18.sec06;
 
 import java.io.*;
 
