@@ -1,42 +1,41 @@
 package ch14.lecture.p05concurrency;
 
-public class C02Concurrency {
-	// synchronized 블럭 (동기화 블럭)
-	
-	
-	static int field = 0;
-	
+public class C03SyncronizedMethod {
 	public static void main(String[] args) {
-		// intrinsic lock
-		// monitor lock
-		// monitor
-		// lock
-		Object o = new Object();
-//		Object o1 = new Object();
+		Box box = new Box();
 		Thread a = new Thread(() -> {
 			for (int i = 0; i < 100000; i++) {
-				synchronized (o) {
-					field++;
-				}
+				box.increase();
 			}
 		});
 		Thread b = new Thread(() -> {
 			for (int i = 0; i < 100000; i++) {
-				synchronized (o) {
-					field++;
-				}
+				box.increase();
 			}
 		});
 		a.start();
 		b.start();
-		
+
 		try {
 			a.join();
 			b.join();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println(field);
+
+		System.out.println(box.item);
+	}
+}
+
+class Box {
+	public int item = 0;
+
+	public synchronized void increase() {
+//		synchronized (this) {
+			item++;
+			
+//		}
 	}
 }
 
