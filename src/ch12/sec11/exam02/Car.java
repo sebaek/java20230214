@@ -1,6 +1,7 @@
 package ch12.sec11.exam02;
 
 public class Car {
+	
 	private String model;
 	private String owner;
 
@@ -27,4 +28,18 @@ public class Car {
 	public String getOwner() {
 		return owner;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 }
+
+
+
+
+
+
+
+
