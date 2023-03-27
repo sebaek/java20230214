@@ -28,6 +28,7 @@ public class C03Server {
 									<li><a href="https://www.daum.net">daum</a></li>
 									<li><a href="https://www.google.com">google</a></li>
 								</ul>
+								<p> made by sebaek </p>
 								""";
 						int length = body.getBytes().length;
 
@@ -49,6 +50,8 @@ public class C03Server {
 						e.printStackTrace();
 					}
 				});
+				
+				t.start();
 			}
 
 		} catch (Exception e) {
