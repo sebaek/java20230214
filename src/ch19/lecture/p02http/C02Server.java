@@ -3,26 +3,26 @@ package ch19.lecture.p02http;
 import java.io.*;
 import java.net.*;
 
-public class C01Server {
+public class C02Server {
 	public static void main(String[] args) {
 		int port = 80;
 
 		try (
 				ServerSocket serverSocket = new ServerSocket(port);) {
-			System.out.println("요청을 기다리는 중...");
+
+			System.out.println("요청 기다리는중..");
 
 			try (
 					Socket socket = serverSocket.accept();
-					InputStream is = socket.getInputStream();
-					InputStreamReader isr = new InputStreamReader(is);
-					BufferedReader br = new BufferedReader(isr);) {
 
-				String line = "";
-				
-				while ((line = br.readLine()) != null) {
-					System.out.println(line);
-				};
+					OutputStream os = socket.getOutputStream();
+					PrintStream ps = new PrintStream(os);) {
+
 			}
+
+			ps.println("HTTP/1.1 200 OK");
+
+			ps.flush();
 
 		} catch (Exception e) {
 			e.printStackTrace();
